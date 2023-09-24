@@ -1,0 +1,104 @@
+#root {
+  background-color: rgb(19, 17, 40);
+  border-style: solid;
+  border-color: rgb(9, 8, 25);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Define uma animação chamada "pulse" */
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamanho inicial do elemento */
+  }
+  50% {
+    transform: scale(3); /* Tamanho aumentado em 10% */
+  }
+  100% {
+    transform: scale(1); /* Retorna ao tamanho inicial */
+  }
+}
+
+/* Define uma caixa de modelo de caixa de borda para todos os elementos */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos básicos para o corpo da página */
+body {
+  background-color: #222222;
+  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/2438013375536940927/D370DBF7BFC83ED36F783F08A598FFF3E71A1D61/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+/* Estilos para os quadrados no tabuleiro do jogo */
+.square {
+  background: rgb(117, 117, 158);
+  border: 2px solid rgb(248, 83, 210);
+  border-radius: 25px;
+  float: left;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 0;
+  text-align: center;
+  color: rgb(248, 83, 210);
+  text-shadow:  0 0 10px rgba(255, 255, 255, 0.5);
+  width: 100px;
+}
+
+/* Estilos para garantir que as linhas do tabuleiro se ajustem corretamente */
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* Estilos para a mensagem de status no topo do tabuleiro */
+.status {
+  margin-bottom: 10px;
+}
+
+/* Estilos para a seção de informações do jogo à direita */
+.game-info {
+  margin-left: 20px;
+} 
+
+.title {
+  font-size: 14px;
+  text-shadow:  0 0 10px rgba(7, 7, 7, 0.5);
+  text-align: center;
+  color: aquamarine;
+}
+
+.status {
+  font-size: 20px;
+  text-align: center;
+  color: #B3E8F2;
+}
+
+.reset {
+  font-size: 15px;
+  text-align: center;
+}
+
+.finish {
+  font-size: 22.5px;
+  color: rgb(202, 13, 94);
+  animation: pulse 2s infinite; /* Nome da animação e duração da animação */
+}
+
+
+
+
+
+
