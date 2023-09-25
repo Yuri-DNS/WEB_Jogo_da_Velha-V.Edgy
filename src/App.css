@@ -73,29 +73,34 @@ body {
   margin-left: 20px;
 } 
 
+/* Estilo para o elemento com a classe "title" (título do jogo) */
 .title {
   font-size: 14px;
   text-shadow:  0 0 10px rgba(7, 7, 7, 0.5);
-  text-align: center;
-  color: aquamarine;
+  text-align: center; 
+  color: aquamarine; 
 }
 
+/* Estilo para o elemento com a classe "status" (status do jogo) */
 .status {
-  font-size: 20px;
-  text-align: center;
+  font-size: 20px; 
+  text-align: center; 
   color: #B3E8F2;
 }
 
+/* Estilo para o elemento com a classe "reset" (botão de reiniciar) */
 .reset {
   font-size: 15px;
-  text-align: center;
+  text-align: center; 
 }
 
+/* Estilo para o elemento com a classe "finish" (mensagem de finalização do jogo) */
 .finish {
-  font-size: 22.5px;
+  font-size: 22.5px; 
   color: rgb(202, 13, 94);
-  animation: pulse 2s infinite; /* Nome da animação e duração da animação */
+  animation: pulse 2s infinite;
 }
+
 
 
 
